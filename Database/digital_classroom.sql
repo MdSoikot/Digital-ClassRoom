@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.7
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jul 26, 2018 at 03:38 PM
--- Server version: 5.7.18
--- PHP Version: 7.1.7
+-- Generation Time: Nov 10, 2020 at 07:40 PM
+-- Server version: 5.7.24
+-- PHP Version: 7.2.19
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -41,7 +40,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `name`, `email`, `pass`, `status`) VALUES
-(1, 'Arif Un', 'arifunctg@gmail.com', '81dc9bdb52d04dc20036dbd8313ed055', 0);
+(2, 'shakhawat', 'mdshakhawathosen122@gmail.com', '123', 0);
 
 -- --------------------------------------------------------
 
@@ -498,7 +497,7 @@ INSERT INTO `teachers` (`id`, `name`, `teacher_id`, `email`, `pass`, `mobile`, `
 --
 DROP TABLE IF EXISTS `assigntch_by_sub`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `assigntch_by_sub`  AS  select `assign_tcr`.`id` AS `id`,`teachers`.`name` AS `name`,`department`.`dpt_name` AS `dpt_name`,`subject`.`subject_name` AS `subject_name`,`session`.`session_name` AS `session_name`,`batch`.`batch_name` AS `batch_name` from (((((`assign_tcr` join `teachers`) join `department`) join `subject`) join `session`) join `batch`) where ((`assign_tcr`.`tcr_id` = `teachers`.`id`) and (`assign_tcr`.`dpt_id` = `department`.`id`) and (`assign_tcr`.`session_id` = `session`.`id`) and (`assign_tcr`.`batch_id` = `batch`.`id`) and (`assign_tcr`.`subject_id` = `subject`.`id`)) ;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `assigntch_by_sub`  AS SELECT `assign_tcr`.`id` AS `id`, `teachers`.`name` AS `name`, `department`.`dpt_name` AS `dpt_name`, `subject`.`subject_name` AS `subject_name`, `session`.`session_name` AS `session_name`, `batch`.`batch_name` AS `batch_name` FROM (((((`assign_tcr` join `teachers`) join `department`) join `subject`) join `session`) join `batch`) WHERE ((`assign_tcr`.`tcr_id` = `teachers`.`id`) AND (`assign_tcr`.`dpt_id` = `department`.`id`) AND (`assign_tcr`.`session_id` = `session`.`id`) AND (`assign_tcr`.`batch_id` = `batch`.`id`) AND (`assign_tcr`.`subject_id` = `subject`.`id`)) ;
 
 --
 -- Indexes for dumped tables
@@ -628,7 +627,7 @@ ALTER TABLE `teachers`
 -- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `admin_notice`

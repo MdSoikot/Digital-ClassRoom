@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Fardin
- * Date: 5/8/2018
- * Time: 1:26 PM
- */
+
 
 if (!isset($_SESSION)) session_start();
 

@@ -9,7 +9,7 @@ if(isset($_POST['email'],$_POST['pass'])){
     $datamatch=$obj->dptheadlog($_POST['email'],$password);
     $tchdatamatch=$obj->teacherlog($_POST['email'],$password);
     $stddatamatch=$obj->studentlog($_POST['email'],$password);
-    $admindatamatch=$obj->adminlog($_POST['email'],$password);
+    $admindatamatch=$obj->adminlog($_POST['email'],$_POST['pass']);
 
     if($_POST['role']=='Dpt_Head'){
         if ($datamatch!=null){
