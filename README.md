@@ -24,7 +24,7 @@ What things you need to install the application.
 5. Run MySQL Server
 6. Then go to `localhost/digital-classroom` from browser.
 7. Login:
- 	- Email : **mdshakhawathosen122@gmail.com** & Password **123456** for role **Admin**
+ 	- Email : **mdshakhawathosen122@gmail.com** & Password **123** for role **Admin**
  	- Email : **example@mailsac.com** Password **123** for role **Head of the Department**
  	- Email : **exm_tcr@mailsac.com** Password **123** for role **Teacher**
 	 - Email : **student_example@gmail.com** Password **123** for role **Student**
