@@ -69,7 +69,7 @@ What things you need to install the application.
 - Upload Assignment and check status.
 - Maintain his own profile.
 
-##### Some Screneshots :
+<!-- ##### Some Screneshots :
 
 ![imgs](https://github.com/Arif-un/Digital-Classroom/blob/master/Screenshots/capture%201.png?raw=true "imgs")
 
@@ -85,7 +85,7 @@ What things you need to install the application.
 ------------
 
 ![digital classroom](https://github.com/Arif-un/Digital-Classroom/blob/master/Screenshots/capture%205.png?raw=true "digital classroom")
-------------
+------------ -->
 
 ### License
 This Project is released under the [MIT License](https://opensource.org/licenses/MIT)
