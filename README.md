@@ -76,10 +76,6 @@ What things you need to install the application.
 ------------
 
 
-![arif-un](https://github.com/Arif-un/Digital-Classroom/blob/master/Screenshots/capture%202.png?raw=true "arif-un")
-
-------------
-
 ![imgs](https://github.com/Arif-un/Digital-Classroom/blob/master/Screenshots/capture%203.png?raw=true "imgs")
 
 ------------
